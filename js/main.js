@@ -304,34 +304,34 @@ document.querySelector(".reset-options").onclick = function () {
 
 // tugle menu 
 
-let toggleBtn = document.querySelector(".header-area .toggle-menu")
-let tLinks = document.querySelector(".header-area .links")
+let toggleBtn = document.querySelector(".header-area .toggle-menu");
+let tLinks = document.querySelector(".header-area .links");
 
-toggleBtn.onclick = function(e) {
+toggleBtn.onclick = function (e) {
 
     // stop propagation
-    e.stopPropagation()
+    e.stopPropagation();
 
     // toggle class 
-    this.classList.toggle("menu-active")
+    this.classList.toggle("menu-active");
 
     // toggle class menu-active
-    tLinks.classList.toggle("open")
+    tLinks.classList.toggle("open");
 
-}
+};
 
 // click anywhere outside menu
 document.addEventListener("click", (e) => {
     if (e.target !== toggleBtn && e.target !== tLinks) {
         // check if menu is open
-        if (tLinks.classList.contains("open")){
-            toggleBtn.classList.toggle("menu-active")
-            tLinks.classList.toggle("open")
+        if (tLinks.classList.contains("open")) {
+            toggleBtn.classList.toggle("menu-active");
+            tLinks.classList.toggle("open");
         }
     }
-})
+});
 
 // stop propagation on menu
-tLinks.onclick = function(e) {
-    e.stopPropagation()
-}
+tLinks.onclick = function (e) {
+    e.stopPropagation();
+};
