@@ -29,4 +29,4 @@ This project is a modern and cleanly designed website built using **HTML**, **CS
 
 1. **📥 Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/customizable-web-settings.git
+   git clone git@github.com:ahhmadas213/Creative-Agency.git
